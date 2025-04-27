@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #2980b9;
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card.flipped, .card.solved {
+  background: #2ecc71;
+}
+
+#timer {
+  font-size: 20px;
+  margin: 10px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: green;
+}
